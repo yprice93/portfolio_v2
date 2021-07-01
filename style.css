@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Eagle+Lake&family=Norican&display=swap');
+
+
+:root {
+    --black: #404040;
+}
+
+@function rem($pixel) {
+    @return $pixel / 16 + rem;
+  }
+
+body {
+    margin: 0;
+   
+}
+
+header, footer, h1, h2, h3, h4, h5, h6  {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Norican', cursive;
+    font-size: 16px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 14px;
+}
+
+section {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 3rem;
+}
+
+p {
+    font-size: 12px;
+}
+
+section { 
+    padding: 20px 50px;
+
+}
+
+/* Nav */
+
+header {
+    padding: 0 6rem;
+}
+
+.logo {
+    text-align: center;
+    border-color: black;
+    font-weight: 800;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+nav ul {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+#home {
+    height: 15rem;
+    margin-top: 3rem;
+}
+
+#about {
+    text-align: center;
+background-color: #e9eaec;
+    padding-top: 5px;
+    height: 36rem;
+}
+
+
+#about .container {
+    margin-top: 0;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#about .container-item {
+    padding: 0 10px;
+}
+
+
+
+#about h2 {
+    font-family: 'Norican', cursive;
+
+}
+
+#about p {
+    font-size: 14px;
+}
+
+#about img {
+    width: 20rem;
+
+
+}
+
+/*Portfolio*/
+
+
+
+@media all and (min-width: 1200px) {
+
+
+
+    .logo {
+        text-align: left;
+        padding: 20px;
+        border-color: black;
+        font-weight: 800;
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding-inline-start: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a {
+    font-size: 32px;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+section {
+    padding: 20px 15%;
+}
+
+#home {
+    padding-top: 10rem;
+    height: 40rem;
+}
+
+
+    #home img {
+        width: 100%;
+    }
+
+    #about {
+        padding-top: 1rem;
+  
+    }
+
+    #about .container {
+        margin-top: 0;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    #about .container-item {
+        padding: 0.5rem;
+       
+    }
+
+    #about h2 {
+        font-size: 36px;
+    }
+
+ 
+    
+    #about p {
+        font-size: 20px;
+    }
+    
+    #about img {
+        width: 25rem;
+    
+    
+    }
+
+ 
+    
+    .container-item img {
+        width: 25rem;
+    }
+
+    #portfolio .group {
+        flex-direction: row;
+    }
+
+    #portfolio h3 {
+        font-size: 32px;
+        font-style: bold;
+    }
+
+    #portfolio h3, p {
+        text-align: left;
+    }
+
+    #portfolio .item {
+        margin: 0 30px;
+    }
+
+    #portfolio img {
+        width: 100%;
+    }
+
+    #portfolio a {
+        margin: 0 20px;
+        font-size: 24px;
+    }
+
+    #contact .group {
+        flex-direction: column;
+    }
+
+    #contact .item {
+        margin: 20px 0;
+
+    }
+
+    #contact form input,
+#contact form textarea {
+    width: 40rem;
+    height: 1.5rem;
+}
+
+#contact form textarea {
+    height: 160px;
+}
+
+    footer p {
+        text-align: center;
+    }
+
+}
